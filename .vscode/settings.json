@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c80cc9cd-03de-45c1-b794-a9df169a67ce/microsoft.web/sites/subscriptions/c80cc9cd-03de-45c1-b794-a9df169a67ce/resourceGroups/abawala_group/providers/Microsoft.Web/sites/abawala",
+    "appService.deploySubpath": "."
+}

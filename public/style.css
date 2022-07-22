@@ -1,0 +1,288 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    font: 1.6rem poppins;
+    margin: 0;
+    background-color: rgb(224, 224, 224);
+}
+
+.navigation{
+    background-color: rgb(45, 107, 221);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.navigation .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul{
+    list-style: none;
+}
+
+.nav-links li{
+    display: inline;
+    padding-left: 20px;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #f08040;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand a:hover{
+    color: #f08040;
+}
+
+.brand a{
+    font-size: 3.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* Poducts */
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.products li{
+    border-top: 0.2rem #e0e0e0e0 solid;
+}
+
+.product{
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.product img{
+    width: 179.2px;
+    height: 230px;
+}
+
+#main-container{
+    padding: 0;
+}
+
+.products a{
+    text-decoration: none;
+    color: #000;
+}
+
+.product-name{
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+    border-top: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.last{
+    display: flex;
+}
+
+.last .product-price{
+    width: 70%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.last .product-button{
+    width: 30%;
+}
+
+.product-button i{
+    color: rgb(45, 107, 221);
+    font-size: 20px;
+}
+
+.product-button i:hover{
+    color: #f08040;
+}
+
+/* .product-brand{
+    margin: 0;
+    border-top: 1px solid red;
+} */
+
+.product-price{
+    color: rgb(6, 145, 6);
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+
+.search input{
+    width: 80%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: none;
+}
+
+/* CATEGORIES */
+.categories{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+.categories a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card{
+    width: 285px;
+    height: 420px;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+.card img{
+    width: 284.2px;
+    height: 350px;
+}
+
+.card-title{
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(45, 107, 221);
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.show{
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacts{
+    width: 40%;
+    text-align: center;
+}
+
+.links{
+    width: 30%;
+    text-align: center;
+} 
+.location{
+    width: 30%;
+}
+
+.copy{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+/* END OF CATEGORIES */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 600px){
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .categories{
+        display: none;
+    }
+
+    .brand a{
+        font-size: 2rem;
+    }
+
+    .product{
+        width: 150px;
+    }
+
+    .product img{
+        width: 149.2;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .contacts{
+        width: 100%;
+    }
+    
+    .links{
+        width: 100%;
+        text-align: center;
+    } 
+    .location{
+        width: 100%;
+    }
+    .footer .container{
+        text-align: center;
+    }
+
+    .head{
+        text-align: center;
+    }
+
+    .navigation .container{
+        width: 100%;
+        text-align: center;
+    }
+}
